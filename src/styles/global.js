@@ -2,9 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
-
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,6 +16,13 @@ export default createGlobalStyle`
     -ms-user-select: none;
     user-select: none;
   }
+
+  ::root {
+    --primary-color: #171717;
+    --secondary-color: #FFF;
+    --third-color: #E5484A;
+  }
+
   ::-webkit-scrollbar {
       width: 8px;
   }

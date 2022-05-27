@@ -1,3 +1,8 @@
+import { useState } from 'react';
+import { useLanguageContext } from '../../contexts/language';
+
+import { SwitchLanguage } from './switch';
+import { RenderIf } from '../renderIf';
 import { Container } from './styles';
 
 import HomeIconSvg from '../../assets/svg/home.svg';
@@ -5,9 +10,13 @@ import AboutIconSvg from '../../assets/svg/aboutMe.svg';
 import ExperiencesIconSvg from '../../assets/svg/experiences.svg';
 import CoursesIconSvg from '../../assets/svg/courses.svg';
 
-export const Header = () => {
+function Header() {
+  const[showSwitchLanguagues, setShowSwitchLanguagues] = useState(false);
+
+  const context = useLanguageContext();
+
   return (
-    <Container className="header">
+    <Container>
       <div className="logo">
         <span>Logo</span>
       </div>
@@ -40,7 +49,20 @@ export const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="language">Lingua</div>
+      <div className="language">
+        <div className="language-active">
+          <button
+            onClick={() => setShowSwitchLanguagues(!showSwitchLanguagues)}
+          >
+            {context.state.language}
+          </button>
+        </div>
+        <RenderIf isTrue={showSwitchLanguagues}>
+          <SwitchLanguage/>
+        </RenderIf>
+      </div>
     </Container>
   );
-};
+}
+
+export { Header };

@@ -1,19 +1,23 @@
-import propTypes from 'prop-types'
+import propTypes from 'prop-types';
 
-import GlobalStyle from '../styles/global'
+import { LanguageContext } from '../contexts/language';
 
-function MyApp({ Component, pageProps }) {
+import GlobalStyle from '../styles/global';
+
+MyApp.propTypes = {
+  Component: propTypes.func,
+  pageProps: propTypes.object,
+  router: propTypes.object
+}
+function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <GlobalStyle/>
-      <Component {...pageProps} />
+      <LanguageContext>
+        <Component {...pageProps} key={router.route} />
+      </LanguageContext>
     </>
   )
 }
 
-MyApp.propTypes = {
-  Component: propTypes.func,
-  pageProps: propTypes.object
-}
-
-export default MyApp
+export default MyApp;
