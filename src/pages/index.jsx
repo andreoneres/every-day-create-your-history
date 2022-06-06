@@ -1,21 +1,20 @@
-import { useRouter } from 'next/router';
-
 import { useLanguageContext } from '../contexts/language';
 import { Header } from '../components/header';
-import { Presentation } from '../components/presentation';
+import { Home } from '../components/home';
+import { Container, Main } from '../components/layout/styles';
 
-function Home() {
-  const { locale, locales, asPath } = useRouter();
-
+function Index() {
   const context = useLanguageContext();
   console.log(context);
 
   return (
-    <>
+    <Container>
       <Header />
-      <Presentation />
-    </>
+      <Main>
+        <Home />
+      </Main>
+    </Container>
   );
 }
 
-export default Home;
+export default Index;

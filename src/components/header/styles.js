@@ -9,6 +9,7 @@ export const Container = styled.header`
   height: 80px;
   font-size: 1em;
   padding: 0px 40px;
+  border-bottom: 1px solid #C4C4C4;
 
   .logo, .language {
     color: #fff;

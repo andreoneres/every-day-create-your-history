@@ -5,7 +5,8 @@ const ButtonStyled = styled.button`
   background-color: transparent;
   color: #E5484A;
   font-weight: bold;
-  padding-bottom: 2px;
+  font-size: 0.9rem;
+  padding-bottom: 3px;
   border-bottom: 2.6px solid #E5484A;
 `;
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLanguageContext } from '../../contexts/language';
 
-import { SwitchLanguage } from './switch';
+import { SwitchLanguage } from '../switchLanguages';
 import { RenderIf } from '../renderIf';
 import { Container } from './styles';
 

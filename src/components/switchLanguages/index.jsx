@@ -1,6 +1,6 @@
 import { Container } from './styles';
 import { useRouter } from 'next/router';
-import { OptionLanguage } from './options';
+import { OptionLanguage } from '../optionsLanguages';
 
 function SwitchLanguage() {
   const { locale, locales, asPath } = useRouter();
