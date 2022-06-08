@@ -3,6 +3,7 @@ import styled from "styled-components";
 const Container = styled.section`
   padding: 50px 60px;
   max-width: 1000px;
+  width: 100%;
 
   .cv-button {
     margin-top: 30px;

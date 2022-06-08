@@ -3,7 +3,7 @@ import { useLanguageContext } from '../../contexts/language';
 
 import { SwitchLanguage } from '../switchLanguages';
 import { RenderIf } from '../renderIf';
-import { Container } from './styles';
+import * as Styled from './styles';
 
 import HomeIconSvg from '../../assets/svg/home.svg';
 import AboutIconSvg from '../../assets/svg/aboutMe.svg';
@@ -16,7 +16,7 @@ function Header() {
   const context = useLanguageContext();
 
   return (
-    <Container>
+    <Styled.Container>
       <div className="logo">
         <span>Logo</span>
       </div>
@@ -61,7 +61,7 @@ function Header() {
           <SwitchLanguage/>
         </RenderIf>
       </div>
-    </Container>
+    </Styled.Container>
   );
 }
 

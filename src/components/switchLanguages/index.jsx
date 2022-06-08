@@ -1,11 +1,11 @@
-import { Container } from './styles';
 import { useRouter } from 'next/router';
 import { OptionLanguage } from '../optionsLanguages';
+import * as Styled from './styles';
 
 function SwitchLanguage() {
   const { locale, locales, asPath } = useRouter();
   return (
-    <Container>
+    <Styled.Container>
       <ul>
         {locales.map((l, i) => {
           return (
@@ -13,7 +13,7 @@ function SwitchLanguage() {
           );
         })}
       </ul>
-    </Container>
+    </Styled.Container>
   );
 }
 

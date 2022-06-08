@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import { ButtonStyled } from "./styles";
+import * as Styled from "./styles";
 
 Button.propTypes = {
   children: PropTypes.node
 }
 function Button({ children }) {
-  return <ButtonStyled>{children}</ButtonStyled>
+  return <Styled.Button>{children}</Styled.Button>
 }
 
 export { Button };

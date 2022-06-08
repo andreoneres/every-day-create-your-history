@@ -2,11 +2,11 @@ import LinkedinIconSvg from '../../assets/svg/linkedin.svg';
 import FacebookIconSvg from '../../assets/svg/facebook.svg';
 import InstagramIconSvg from '../../assets/svg/instagram.svg';
 import GitHubIconSvg from '../../assets/svg/github.svg';
-import { Container } from './styles';
+import * as Styled from './styles';
 
 function SocialMedia() {
   return (
-    <Container>
+    <Styled.Container>
       <ul>
         <li>
           <a href="https://www.facebook.com/andreoneres" target="_blank" rel="noreferrer">
@@ -29,7 +29,7 @@ function SocialMedia() {
           </a>
         </li>
       </ul>
-    </Container>
+    </Styled.Container>
   );
 }
 

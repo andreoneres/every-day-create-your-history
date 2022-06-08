@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ButtonStyled = styled.button`
+const Button = styled.button`
   border: none;
   background-color: transparent;
   color: #E5484A;
@@ -10,4 +10,4 @@ const ButtonStyled = styled.button`
   border-bottom: 2.6px solid #E5484A;
 `;
 
-export { ButtonStyled };
+export { Button };

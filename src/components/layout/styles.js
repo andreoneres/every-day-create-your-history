@@ -6,6 +6,8 @@ const Container = styled.div`
 `;
 
 const Main = styled.div`
+  display: flex;
+  justify-content: space-around;
   margin: 0px 200px;
   border-left: 1px solid rgba(196, 196, 196, 0.2);
   border-right: 1px solid rgba(196, 196, 196, 0.2);

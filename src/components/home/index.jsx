@@ -3,12 +3,12 @@ import { Border } from '../border';
 import { Button } from '../button';
 import { SocialMedia } from '../socialMedia';
 import DownloadIconSvg from '../../assets/svg/download.svg';
-import { Container, InfosContainer } from './styles';
+import * as Styled from './styles';
 
 function Home() {
   return (
-    <Container>
-      <InfosContainer>
+    <Styled.Container>
+      <Styled.InfosContainer>
         <div className="infos">
           <div className="hello">
             <Border height={'5px'} width={'41px'} />
@@ -29,14 +29,14 @@ function Home() {
           </div>
         </div>
         <Image src="/me.jpg" alt="My Image" width={300} height={318} className="image" />
-      </InfosContainer>
+      </Styled.InfosContainer>
       <div className="cv-button">
         <Button>
           Download CV <DownloadIconSvg />
         </Button>
       </div>
       <SocialMedia />
-    </Container>
+    </Styled.Container>
   );
 }
 
