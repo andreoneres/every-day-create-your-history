@@ -12,6 +12,11 @@ export default createGlobalStyle`
     user-select: none;
   }
 
+  body {
+    height: 100vh;
+    background-color: rgba(23,23,23,0.98);
+  }
+
   ::root {
     --primary-color: #171717;
     --secondary-color: #FFF;
