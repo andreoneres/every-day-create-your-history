@@ -2,24 +2,30 @@
   "header": [
     {
       "locale": "pt",
-      "home": "Home",
-      "aboutMe": "Sobre Mim",
-      "experiences": "Experiências",
-      "courses": "Cursos"
+      "translate": {
+        "home": "Home",
+        "aboutMe": "Sobre Mim",
+        "experiences": "Experiências",
+        "courses": "Cursos"
+      }
     },
     {
       "locale": "en",
-      "home": "Home",
-      "aboutMe": "About Me",
-      "experiences": "Experiences",
-      "courses": "Courses"
+      "translate": {
+        "home": "Home",
+        "aboutMe": "About Me",
+        "experiences": "Experiences",
+        "courses": "Courses"
+      }
     },
     {
       "locale": "es",
-      "home": "Home",
-      "aboutMe": "Sobre Mí",
-      "experiences": "Experiencias",
-      "courses": "Cursos"
+      "translate": {
+        "home": "Home",
+        "aboutMe": "Sobre Mí",
+        "experiences": "Experiencias",
+        "courses": "Cursos"
+      }
     }
   ]
 }
