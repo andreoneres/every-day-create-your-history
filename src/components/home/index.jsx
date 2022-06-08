@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Border } from '../border';
 import { Button } from '../button';
+import { SocialMedia } from '../socialMedia';
 import DownloadIconSvg from '../../assets/svg/download.svg';
 import { Container, InfosContainer } from './styles';
 
@@ -27,13 +28,14 @@ function Home() {
             <span>Web Developer Full Stack</span>
           </div>
         </div>
-        <Image src="/me.jpg" alt="My Image" width={256} height={290} className="image" />
+        <Image src="/me.jpg" alt="My Image" width={300} height={318} className="image" />
       </InfosContainer>
       <div className="cv-button">
         <Button>
           Download CV <DownloadIconSvg />
         </Button>
       </div>
+      <SocialMedia />
     </Container>
   );
 }
