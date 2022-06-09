@@ -6,7 +6,6 @@ import Head from 'next/head';
 
 function Index() {
   const context = useLanguageContext();
-  console.log(context);
 
   return (
     <>
