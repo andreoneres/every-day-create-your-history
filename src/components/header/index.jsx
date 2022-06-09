@@ -19,14 +19,6 @@ function Header() {
         <span>Logo</span>
       </div>
       <Menu />
-      <div className="language">
-        <div className="language-active">
-          <button onClick={() => setShowSwitchLanguagues(!showSwitchLanguagues)}>{context.state.language}</button>
-        </div>
-        <RenderIf isTrue={showSwitchLanguagues}>
-          <SwitchLanguage />
-        </RenderIf>
-      </div>
     </Styled.Container>
   );
 }
