@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 50px 60px;
@@ -12,6 +12,10 @@ const Container = styled.section`
   .cv-button svg {
     position: relative;
     top: 1.9px;
+  }
+
+  @media (max-width: 400px) {
+    padding: 40px 30px;
   }
 `;
 
@@ -31,14 +35,14 @@ const InfosContainer = styled.div`
   }
 
   .hello span {
-    color: #E5484A;
+    color: #e5484a;
     margin-left: 20px;
   }
 
   .name {
     padding: 20px 0px;
     margin-left: 25px;
-    color: #FFF;
+    color: #fff;
   }
 
   .name h2 {
@@ -53,11 +57,30 @@ const InfosContainer = styled.div`
   }
 
   .calling {
-    color: #FFF;
+    color: #fff;
   }
 
   .image {
     border-radius: 19px;
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+
+    .image {
+      margin-top: 30px !important;
+      border-radius: 19px;
+      min-width: 220px !important;
+      min-height: 220px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .name {
+      padding: 20px 0px;
+      margin-left: 20px;
+      color: #fff;
+    }
   }
 `;
 
