@@ -8,6 +8,10 @@ const Button = styled.button`
   font-size: 0.9rem;
   padding-bottom: 3px;
   border-bottom: 2.6px solid #E5484A;
+
+  a {
+    color: #E5484A !important;
+  }
 `;
 
 export { Button };
