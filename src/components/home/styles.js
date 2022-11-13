@@ -1,21 +1,34 @@
 import styled from 'styled-components';
 
 const Container = styled.section`
-  padding: 50px 60px;
-  max-width: 1000px;
+  display: block;
   width: 100%;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.2);
 
   .cv-button {
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 
   .cv-button svg {
     position: relative;
     top: 1.9px;
   }
+`;
 
-  @media (max-width: 400px) {
-    padding: 40px 30px;
+const Subcontainer = styled.div`
+  margin: 0px 130px;
+  padding: 40px 95px;
+  border-left: 1px solid rgba(196, 196, 196, 0.2);
+  border-right: 1px solid rgba(196, 196, 196, 0.2);
+
+  @media (max-width: 980px) {
+    margin: 0px 90px;
+    padding: 40px 65px;
+  }
+
+  @media (max-width: 660px) {
+    margin: 0px 30px;
+    padding: 30px 65px;
   }
 `;
 
@@ -70,8 +83,8 @@ const InfosContainer = styled.div`
     .image {
       margin-top: 30px !important;
       border-radius: 19px;
-      min-width: 220px !important;
-      min-height: 220px !important;
+      min-width: 13.75rem !important;
+      min-height: 13.75rem !important;
     }
   }
 
@@ -84,4 +97,4 @@ const InfosContainer = styled.div`
   }
 `;
 
-export { Container, InfosContainer };
+export { Container, InfosContainer, Subcontainer };
