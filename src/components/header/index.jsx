@@ -1,22 +1,14 @@
-import { useState } from 'react';
-import { useLanguageContext } from '../../contexts/language';
-
-import { SwitchLanguage } from '../switchLanguages';
-import { RenderIf } from '../renderIf';
 import { Menu } from '../menu';
 
 import * as Styled from './styles';
+import Image from 'next/image';
 
 
 function Header() {
-  const [showSwitchLanguagues, setShowSwitchLanguagues] = useState(false);
-
-  const context = useLanguageContext();
-
   return (
     <Styled.Container>
       <div className="logo">
-        <span>Logo</span>
+      <Image src="/favicon.ico" alt="My Image" width={40} height={40} />
       </div>
       <Menu />
     </Styled.Container>
