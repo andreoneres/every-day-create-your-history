@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  max-width: 600px;
+  max-width: 37.5rem;
   width: 100%;
 
   ul {
@@ -23,7 +23,7 @@ const Container = styled.div`
 
   .bar-min {
     border-bottom: 5px solid #e5484a;
-    width: 30px;
+    width: 1.875rem;
   }
 `;
 
