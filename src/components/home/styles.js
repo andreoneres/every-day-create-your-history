@@ -32,8 +32,8 @@ export const Left = styled.div`
   }
 
   @media (max-width: 666px) {
-    height: 43vh;
-    margin-bottom: 30px;
+    height: 280px;
+    margin-bottom: 0px;
   }
 `;
 
