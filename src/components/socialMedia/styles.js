@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 const Container = styled.div`
+  position: fixed;
+  bottom: 90px;
+  right: calc(5% - 39px);
+
   ul {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
+    height: 25vh;
   }
 
   ul > li {

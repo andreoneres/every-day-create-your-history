@@ -1,7 +1,7 @@
-import LinkedinIconSvg from '../../assets/svg/linkedin.svg';
-import FacebookIconSvg from '../../assets/svg/facebook.svg';
-import InstagramIconSvg from '../../assets/svg/instagram.svg';
-import GitHubIconSvg from '../../assets/svg/github.svg';
+import LinkedinIconSvg from '@assets/svg/linkedin.svg';
+import FacebookIconSvg from '@assets/svg/facebook.svg';
+import InstagramIconSvg from '@assets/svg/instagram.svg';
+import GitHubIconSvg from '@assets/svg/github.svg';
 import * as Styled from './styles';
 
 function SocialMedia() {

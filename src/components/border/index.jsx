@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import * as Styled from "./styles";
 
 Border.propTypes = {

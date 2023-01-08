@@ -1,7 +1,7 @@
-import HomeIconSvg from '../../assets/svg/home.svg';
-import AboutIconSvg from '../../assets/svg/aboutMe.svg';
-import ExperiencesIconSvg from '../../assets/svg/experiences.svg';
-import CoursesIconSvg from '../../assets/svg/courses.svg';
+import HomeIconSvg from '@assets/svg/home.svg';
+import AboutIconSvg from '@assets/svg/aboutMe.svg';
+import ExperiencesIconSvg from '@assets/svg/experiences.svg';
+import CoursesIconSvg from '@assets/svg/courses.svg';
 
 import * as Styled from './styles';
 
@@ -39,4 +39,4 @@ function Menu() {
   );
 }
 
-export { Menu };
+export default Menu;

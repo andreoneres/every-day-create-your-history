@@ -5,13 +5,11 @@ const Button = styled.button`
   background-color: transparent;
   color: #E5484A;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   padding-bottom: 3px;
   border-bottom: 2.6px solid #E5484A;
-
-  a {
-    color: #E5484A !important;
-  }
+  width: 140px;
+  cursor: pointer;
 `;
 
 export { Button };

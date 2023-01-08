@@ -10,8 +10,17 @@ export const Container = styled.header`
   font-size: 1em;
   padding: 0px 40px;
   border-bottom: 1px solid rgba(196, 196, 196, 0.2);
+`;
 
-  .logo, .language {
-    color: #fff;
-  }
+export const Logo = styled.div`
+  color: #fff;
+`;
+
+export const LogoText = styled.div`
+  color: #fff;
+  font-size: 1.9em;
+`;
+
+export const Letter = styled.span`
+  color: #E5484A;
 `;

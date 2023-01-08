@@ -1,45 +1,38 @@
-import Image from 'next/image';
-import { Border } from '../border';
-import { Button } from '../button';
-import { SocialMedia } from '../socialMedia';
-import DownloadIconSvg from '../../assets/svg/download.svg';
+import { Border } from '@components/border';
+import { Button } from '@components/button';
+import DownloadIconSvg from '@assets/svg/download.svg';
+import MainImage from '@assets/svg/mainImage.svg';
+
 import * as Styled from './styles';
 
 function Home() {
   return (
     <Styled.Container>
-      <Styled.Subcontainer>
-        <Styled.InfosContainer>
-          <div className="infos">
-            <div className="hello">
-              <Border height={'5px'} width={'41px'} />
-              <span>Hello!</span>
-            </div>
-            <div className="name">
-              <Border height={'156px'} width={'16px'} color={'#C4C4C4'} />
-              <h2>
-                I'M
-                <span>
-                  {' '}
-                  ANDRÉ <br /> OLIVEIRA
-                </span>
-              </h2>
-            </div>
-            <div className="calling">
-              <span>Web Developer Full Stack</span>
-            </div>
-          </div>
-          <Image src="/me.jpg" alt="My Image" width={300} height={318} className="image" />
-        </Styled.InfosContainer>
-        <div className="cv-button">
-          <Button>
-            <a href="https://drive.google.com/file/d/1XZzPce_Gpc5LqpFJoqXk6VfrT6R_mXDA/view?usp=share_link" target="_blank" rel="noreferrer">
-              Download CV <DownloadIconSvg />
-            </a>
+      <Styled.Content>
+        <Styled.Left>
+          <Styled.Hello>
+            <Border height={'5px'} width={'41px'} />
+            <Styled.HelloText>Hello!</Styled.HelloText>
+          </Styled.Hello>
+          <Styled.Title>
+            <Border height={'156px'} width={'16px'} color={'#C4C4C4'} />
+            <Styled.TitleText>
+              <Styled.TitleLight>I'M</Styled.TitleLight> ANDRÉ <br /> OLIVEIRA
+            </Styled.TitleText>
+          </Styled.Title>
+          <Styled.Calling>
+            <Styled.CallingText>Web Developer FullStack</Styled.CallingText>
+          </Styled.Calling>
+          <Button
+            onClick={() => window.open("https://google.com", "_blank")}
+          >
+            Download CV <DownloadIconSvg />
           </Button>
-        </div>
-        <SocialMedia />
-      </Styled.Subcontainer>
+        </Styled.Left>
+        <Styled.Right>
+          <MainImage />
+        </Styled.Right>
+      </Styled.Content>
     </Styled.Container>
   );
 }

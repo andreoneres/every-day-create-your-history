@@ -1,18 +1,18 @@
-import { Menu } from '../menu';
+import Menu from '@components/menu';
 
 import * as Styled from './styles';
-import Image from 'next/image';
-
 
 function Header() {
   return (
     <Styled.Container>
-      <div className="logo">
-      <Image src="/favicon.ico" alt="My Image" width={40} height={40} />
-      </div>
+      <Styled.Logo>
+        <Styled.LogoText>
+          andre<Styled.Letter>o</Styled.Letter>neres
+        </Styled.LogoText>
+      </Styled.Logo>
       <Menu />
     </Styled.Container>
   );
 }
 
-export { Header };
+export default Header;

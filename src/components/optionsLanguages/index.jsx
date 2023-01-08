@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { useLanguageContext } from '../../contexts/language';
+import { useLanguageContext } from '@contexts/language';
 
 OptionLanguage.propTypes = {
   language: PropTypes.string
