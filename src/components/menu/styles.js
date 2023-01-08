@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+export const Container = styled.div`
   max-width: 37.5rem;
   width: 100%;
 
@@ -25,6 +25,8 @@ const Container = styled.div`
     border-bottom: 5px solid #e5484a;
     width: 1.875rem;
   }
-`;
 
-export { Container };
+  @media (max-width: 730px) {
+    display: none;
+  }
+`;

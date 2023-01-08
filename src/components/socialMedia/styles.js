@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+export const Container = styled.div`
   position: fixed;
   bottom: 90px;
-  right: calc(5% - 39px);
+  right: calc(5% - 40px);
 
   ul {
     display: flex;
@@ -11,7 +11,7 @@ const Container = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin-top: 30px;
-    height: 25vh;
+    height: 250px;
   }
 
   ul > li {
@@ -25,6 +25,12 @@ const Container = styled.div`
   svg:hover {
     transform: scale(1.4) translateY(-3px);
   }
-`;
 
-export { Container };
+  @media (max-width: 700px) {
+    right: calc(5% - 26px);
+  }
+
+  @media (max-width: 400px) {
+    right: calc(5% - 32px);
+  }
+`;

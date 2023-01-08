@@ -10,6 +10,11 @@ export const Container = styled.header`
   font-size: 1em;
   padding: 0px 40px;
   border-bottom: 1px solid rgba(196, 196, 196, 0.2);
+
+  @media (max-width: 630px) {
+    height: 60px;
+    padding: 0px 10px;
+  }
 `;
 
 export const Logo = styled.div`
