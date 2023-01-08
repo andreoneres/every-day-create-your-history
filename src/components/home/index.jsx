@@ -2,12 +2,11 @@ import Border from '@components/border';
 import Button from '@components/button';
 import DownloadIconSvg from '@assets/svg/download.svg';
 import MainImage from '@assets/svg/mainImage.svg';
+import { cvUrl } from '@constants/curriculum';
 
 import * as Styled from './styles';
 
 function Home() {
-  const cvLink = 'https://drive.google.com/file/d/1jYQxrPtVE6cUFVXf-SYRkjIN3VjiBPkn/view?usp=share_link';
-
   return (
     <Styled.Container>
       <Styled.Content>
@@ -26,7 +25,7 @@ function Home() {
             <Styled.CallingText>Web Developer FullStack</Styled.CallingText>
           </Styled.Calling>
           <Button
-            onClick={() => window.open(cvLink, "_blank")}
+            onClick={() => window.open(cvUrl, "_blank")}
           >
             Download CV <DownloadIconSvg />
           </Button>
