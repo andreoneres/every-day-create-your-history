@@ -1,4 +1,5 @@
 import Menu from '@components/menu';
+import MenuMobile from '@components/menuMobile';
 
 import * as Styled from './styles';
 
@@ -11,6 +12,7 @@ function Header() {
         </Styled.LogoText>
       </Styled.Logo>
       <Menu />
+      <MenuMobile />
     </Styled.Container>
   );
 }

@@ -19,6 +19,7 @@ export const Container = styled.header`
 
 export const Logo = styled.div`
   color: #fff;
+  z-index: 10;
 `;
 
 export const LogoText = styled.div`
