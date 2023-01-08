@@ -11,4 +11,4 @@ function Border({ height, width, color = "#E5484A" }) {
   return <Styled.Border height={height} width={width} color={color}/>
 }
 
-export { Border };
+export default Border;

@@ -10,4 +10,4 @@ function Button({ children, onClick }) {
   return <Styled.Button onClick={onClick} >{children}</Styled.Button>
 }
 
-export { Button };
+export default Button;

@@ -1,5 +1,5 @@
-import { Border } from '@components/border';
-import { Button } from '@components/button';
+import Border from '@components/border';
+import Button from '@components/button';
 import DownloadIconSvg from '@assets/svg/download.svg';
 import MainImage from '@assets/svg/mainImage.svg';
 
