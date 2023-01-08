@@ -1,0 +1,31 @@
+{
+  "header": [
+    {
+      "locale": "pt",
+      "translate": {
+        "home": "Home",
+        "aboutMe": "Sobre Mim",
+        "experiences": "Experiências",
+        "courses": "Cursos"
+      }
+    },
+    {
+      "locale": "en",
+      "translate": {
+        "home": "Home",
+        "aboutMe": "About Me",
+        "experiences": "Experiences",
+        "courses": "Courses"
+      }
+    },
+    {
+      "locale": "es",
+      "translate": {
+        "home": "Home",
+        "aboutMe": "Sobre Mí",
+        "experiences": "Experiencias",
+        "courses": "Cursos"
+      }
+    }
+  ]
+}
