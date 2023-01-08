@@ -6,6 +6,8 @@ import MainImage from '@assets/svg/mainImage.svg';
 import * as Styled from './styles';
 
 function Home() {
+  const cvLink = 'https://drive.google.com/file/d/1jYQxrPtVE6cUFVXf-SYRkjIN3VjiBPkn/view?usp=share_link';
+
   return (
     <Styled.Container>
       <Styled.Content>
@@ -24,7 +26,7 @@ function Home() {
             <Styled.CallingText>Web Developer FullStack</Styled.CallingText>
           </Styled.Calling>
           <Button
-            onClick={() => window.open("https://google.com", "_blank")}
+            onClick={() => window.open(cvLink, "_blank")}
           >
             Download CV <DownloadIconSvg />
           </Button>
