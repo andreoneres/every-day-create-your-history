@@ -10,6 +10,7 @@ export const Container = styled.div`
 
 export const MenuButton = styled.div`
   z-index: 10;
+  cursor: pointer;
 `;
 
 export const MenuButtonLine = styled.div`
