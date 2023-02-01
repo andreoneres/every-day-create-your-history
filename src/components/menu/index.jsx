@@ -8,33 +8,36 @@ import * as Styled from './styles';
 function Menu() {
   return (
     <Styled.Container>
-      <ul>
-        <li>
+      <Styled.MenuList>
+        <Styled.MenuItem>
           <a href="#">
             <HomeIconSvg />
             <span>Home</span>
-            {/* <div className="bar-min"></div> */}
           </a>
-        </li>
-        <li>
+          <div className="bar-min"></div>
+        </Styled.MenuItem>
+        <Styled.MenuItem>
           <a href="#">
             <AboutIconSvg />
             <span>About Me</span>
           </a>
-        </li>
-        <li>
+          <div className="bar-min"></div>
+        </Styled.MenuItem>
+        <Styled.MenuItem>
           <a href="#">
             <ExperiencesIconSvg />
             <span>Experiences</span>
           </a>
-        </li>
-        <li>
+          <div className="bar-min"></div>
+        </Styled.MenuItem>
+        <Styled.MenuItem>
           <a href="#">
             <CoursesIconSvg />
             <span>Courses</span>
           </a>
-        </li>
-      </ul>
+          <div className="bar-min"></div>
+        </Styled.MenuItem>
+      </Styled.MenuList>
     </Styled.Container>
   );
 }
