@@ -9,13 +9,8 @@ function SocialMedia() {
     <Styled.Container>
       <ul>
         <li>
-          <a href="https://www.facebook.com/andreoneres" target="_blank" rel="noreferrer">
-            <FacebookIconSvg />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/andreoneres" target="_blank" rel="noreferrer">
-            <InstagramIconSvg />
+          <a href="https://github.com/andreoneres" target="_blank" rel="noreferrer">
+            <GitHubIconSvg />
           </a>
         </li>
         <li>
@@ -24,8 +19,13 @@ function SocialMedia() {
           </a>
         </li>
         <li>
-          <a href="https://github.com/andreoneres" target="_blank" rel="noreferrer">
-            <GitHubIconSvg />
+          <a href="https://www.facebook.com/andreoneres" target="_blank" rel="noreferrer">
+            <FacebookIconSvg />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/andreoneres" target="_blank" rel="noreferrer">
+            <InstagramIconSvg />
           </a>
         </li>
       </ul>
